@@ -1,7 +1,7 @@
 # DataStorm: Predictive Analytics for Power Outages
 
 ## Project Overview
-DataStorm is a predictive analytics solution designed to support energy companies by forecasting the likelihood of power outages in São Paulo based on real-time weather data and historical occurrences. Developed as part of the FIAP and Minsait 2024 Challenge, this project aims to enhance operational efficiency and support proactive emergency management.
+DataStorm is a predictive analytics solution designed to support energy companies by forecasting the likelihood of power outages in São Paulo based on near real-time weather data and historical occurrences. Developed as part of the FIAP and Minsait 2024 Challenge, this project aims to enhance operational efficiency and support proactive emergency management.
 
 ## Problem Statement
 The absence of real-time meteorological data integration is a significant issue for energy companies. This lack of data impacts the efficiency of operations, resource allocation, and response to adverse weather events, increasing the risk of service interruptions. The DataStorm solution aims to fill this gap by integrating multiple data sources and leveraging machine learning models to provide accurate predictions and actionable insights.
@@ -29,7 +29,7 @@ The solution is built using the Google Cloud Platform, integrating multiple data
 
 ## Data Sources
 The data lake integrates the following sources:
-- **Real-Time Weather Data**: API for hourly weather updates and 7-day forecasts, including precipitation, temperature, and humidity.
+- **Near Real-Time Weather Data**: API for hourly weather updates and 7-day forecasts, including precipitation, temperature, and humidity.
 - **Historical Data**: Daily weather records, power outage occurrences, and emergency incidents from 2022 to 2024.
 - **Demographic Data**: Population density, number of hospitals, number of favelas, and Human Development Index (HDI) for ranking subprefectures based on criticality.
 
@@ -44,7 +44,7 @@ The solution follows these steps:
 2. **Data Transformation**: Data is cleaned, processed, and stored in the TRUSTED layer.
 3. **Data Integration**: The REFINED layer consolidates all data into a single view for analysis.
 4. **Model Training**: Historical data is used to train the machine learning models.
-5. **Prediction**: Trained models predict future power outages based on real-time weather data.
+5. **Prediction**: Trained models predict future power outages based on near real-time weather data.
 6. **Visualization**: Results are visualized in dashboards for easy interpretation and decision-making.
 
 ## Project Structure
